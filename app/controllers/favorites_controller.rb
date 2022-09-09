@@ -14,4 +14,8 @@ class FavoritesController < ApplicationController
     redirect_to request.referer
   end
 
+  def set_book
+    @book = Book.find(params[:book_id])
+  end
+
 end
